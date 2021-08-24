@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.heading {
+    color: blueviolet;
+}
+
+.description {
+    font-size: large;
+}
+
+label {
+    font-size: larger;
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+}
+
+input {
+    border-radius: 25px;
+    outline: none;
+    font-size: larger;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-color: blueviolet;
+}
+
+button {
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: larger;
+    font-weight: 900;
+}
+
+caption {
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+    padding: 20px;
+}
+
+table,
+th,
+td {
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+}
