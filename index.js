@@ -10,7 +10,7 @@ function validateamount() {
     var bill = parseInt(billAmount.value);
     var cash = parseInt(cashGiven.value)
     if (bill > 0) {
-        if (cash > bill) {
+        if (cash >= bill) {
             console.log("success")
             const amountTobeReturned = cashGiven.value - billAmount.value
             calculateChange(amountTobeReturned)
