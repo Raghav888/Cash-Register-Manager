@@ -5,10 +5,10 @@ const message = document.querySelector(".error-message")
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1]
 const NotesReturn = document.querySelectorAll(".no-of-notes")
 
-function validateamount() {
+const validateamount=()=> {
     message.style.display = "none"
-    var bill = parseInt(billAmount.value);
-    var cash = parseInt(cashGiven.value)
+    let bill = parseInt(billAmount.value);
+    let cash = parseInt(cashGiven.value)
     if (bill > 0) {
         if (cash >= bill) {
             console.log("success")
@@ -26,7 +26,7 @@ function validateamount() {
     }
 }
 
-function calculateChange(amountTobeReturned) {
+const calculateChange=(amountTobeReturned) =>{
     for (let i = 0; i < availableNotes.length; i++) {
         const numberofNotes = Math.trunc(amountTobeReturned / availableNotes[i])
         amountTobeReturned = amountTobeReturned % availableNotes[i]
